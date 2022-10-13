@@ -1,0 +1,235 @@
+/* Step 2: Import the Reset */
+@import url(./reset.css);
+/* End of Reset */
+
+
+/* Step 3: Import the Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Abyssinica+SIL&family=Poppins:wght@200&family=Roboto:wght@300&display=swap');
+/* End of Fonts */
+
+* {
+    outline: 1px dashed #ccc;
+}
+
+
+/* Step 4: Setup the Defaults */
+html, body, main, header{
+    height: 100%;
+    scroll-behavior: smooth;
+} 
+
+p{
+    margin: 1.2em;
+    line-height: 1.5em;
+}
+
+strong{
+    font-weight: bold;
+}
+
+em{
+    font-style: italic;
+}
+
+body{
+    font-family: 'Roboto', 'sans-serif';
+}
+/* End of Defaults */
+
+
+/* Step 5: Design the Header */
+/*we should only have 1 h1 in the page so styling like this should be fine*/
+header{
+    background-image: url(../images/benjamin-voros-phIFdC6lA4E-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.main-header-titles{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-shadow: 2px 2px rgba(0, 0, 0,0.5);
+}
+
+.main-header-titles h1{
+    font-family: 'Poppins', 'sans-serif';   /*changes font */
+    font-size: 54pt;                        /*changes font size*/
+}
+
+/* we are targeting the class id 'main-header-titles', so it specially targets the things we need inside of that class and nowhere else*/
+.main-header-titles h2{
+    font-family: 'Abyssinica SIL', serif;
+    font-size: 34pt;
+}
+/* End of Header */
+
+
+/* Step 6: Define the Nav */
+#main-nav{
+    width: 100%;
+    height: 64px;
+    background-color: rgba(0, 0, 0,0.5);
+} 
+
+#main-nav ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#main-nav ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-nav ul li a{
+    padding: 1.5em;
+    text-decoration: none;
+    color: #fff;
+    transition: 0.5s;
+}
+
+#main-nav ul li a:hover{
+    background-color: rgba(255, 255, 255, .25);
+    transition: 0.5s;
+}
+/* End of Nav */
+
+
+/* Step 7: Define the Section Defaults */
+.main-section > h3{
+    font-size: 2.1em;
+    font-weight: bold;
+    text-align: center;
+    padding: 1em;
+    background-color: #333;
+    color: #fff;
+    margin-bottom: 2em;
+}
+
+.main-section:nth-child(odd){
+    background-color: aliceblue;
+}
+
+.main-section:nth-child(even){
+    background-color: #ccc;
+}
+/* End of Section Defaults */
+
+
+/* Step 8: Design Section 1 */
+table{
+    margin: 1.2em;
+    float: left;
+    border: 1px solid #ccc;
+}
+
+table > tbody > tr:nth-child(odd){
+    background-color: rgb(210, 234, 255);
+}
+
+th, td {
+    border: 1px solid #333;
+    padding: 1.2em;
+    text-align: center;
+}
+
+th, tfoot > tr{
+    background-color: #007bff;
+    color: #fff;
+    font-weight: bold;
+}
+/* End of Section 1 */
+
+
+/* Step 9: Design Section 2 */
+#section-2 figure{
+    width: 300px;
+    margin: 0 1em;
+}
+
+#section-2 > div:nth-child(2) > figure {
+    float: left;
+}
+
+#section-1 > div:nth-child(3) {
+    margin-top: 2em;
+}
+
+#section-1 > div:nth-child(3) > figure {
+    float: right;
+}
+
+figure > img{
+    width: 100%;
+}
+
+cite {
+    display: block;
+    background-color: #333;
+    color: #fff;
+    padding: 0.5em;
+}
+
+cite > a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+cite > a:hover {
+    color: #fff;
+}
+/* End of Section 2 */
+
+
+/* Step 10: Design Section 3 */
+
+/* End of Section 3 */
+
+
+/* Step 11: Design Section 4 */
+#skills {
+    width: 50%;
+    margin: 0 auto; 
+}
+
+#skills > li {
+    width: 100%;
+    background-color: #333;
+    border-radius: 20px;
+    margin-bottom: 1em;
+    height: 40px;
+    display: flex;
+    overflow: hidden;
+}
+
+#skills > li > span {
+    display: flex;
+    align-items: center;
+    background-color: purple;
+    content: "";
+    padding: 0 1em;
+    color: #fff;
+}
+
+#html {
+    width: 20%;
+}
+
+#css {
+    width: 5%;
+}
+
+#javascript {
+    width: 0%;
+}
+
+#c-sharp {
+    width: 40%;
+}
+/* End of Section 4 */

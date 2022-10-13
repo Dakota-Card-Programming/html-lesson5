@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Step 1: Link the external style sheet -->
+        <link rel="stylesheet" href="./styles/style.css">
+        <title>Cascading Style Sheet Lecture</title>
+    </head>
+
+    <body id="home">
+        <header>
+            <nav id="main-nav">
+                <ul>
+                    <li>
+                        <a href="#home">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="#section-1">Section 1</a>
+                    </li>
+
+                    <li>
+                        <a href="#section-2">Section 2</a>
+                    </li>
+
+                    <li>
+                        <a href="#section-3">Section 3</a>
+                    </li>
+
+                    <li>
+                        <a href="#section-4">Section 4</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="main-header-titles">
+                <h1>My Glorious Title</h1>
+                <h2>Boom shakalaka!</h2>
+            </div>
+        </header>
+
+        <section class="main-section" id="section-1">
+        <h3>Section 1</h3>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Heading 1</th>
+                    <th>Heading 2</th>
+                    <th>Heading 3</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>R1C1</td>
+                    <td>R1C2</td>
+                    <td>R1C3</td>
+                </tr>
+                <tr>
+                    <td>R2C1</td>
+                    <td>R2C2</td>
+                    <td>R2C3</td>
+                </tr>
+                <tr>
+                    <td>R3C1</td>
+                    <td>R3C2</td>
+                    <td>R3C3</td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <td colspan="3">&copy;Rowcol Inc.</td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <p><strong>Lorem ipsum dolor sit</strong> amet consectetur adipisicing elit. Repudiandae quos quibusdam, dolorem modi officiis ex! Eaque <em>error consectetur</em> dignissimos, unde aperiam eius corporis, consequatur reiciendis architecto mollitia adipisci veniam eveniet? <strong>Lorem ipsum dolor sit</strong> amet consectetur adipisicing elit. Repudiandae quos quibusdam, dolorem modi officiis ex! Eaque <em>error consectetur</em> dignissimos, unde aperiam eius corporis, consequatur reiciendis architecto mollitia adipisci veniam eveniet?</p>
+
+        <p><strong>Lorem ipsum dolor sit</strong> amet consectetur adipisicing elit. Repudiandae quos quibusdam, dolorem modi officiis ex! Eaque <em>error consectetur</em> dignissimos, unde aperiam eius corporis, consequatur reiciendis architecto mollitia adipisci veniam eveniet? <strong>Lorem ipsum dolor sit</strong> amet consectetur adipisicing elit. Repudiandae quos quibusdam, dolorem modi officiis ex! Eaque <em>error consectetur</em> dignissimos, unde aperiam eius corporis, consequatur reiciendis architecto mollitia adipisci veniam eveniet?</p>
+        </section>
+
+        <section class="main-section" id="section-2">
+        <h3>Section 2</h3>
+
+        <div class="clearfix">
+            <figure>
+                <img src="./images/boo-the-dog.jpg" alt="A picture of the cutest dog in the world; Boo the Dog.">
+                <cite>
+                    Source:
+                    <a href="https://people.com/pets/boo-the-pomeranian-dies/">Photo: Boo/Facebook</a>
+                </cite>
+            </figure>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, placeat deserunt illum, nihil optio cupiditate est odio voluptatem odit aliquam minima fuga iste omnis totam non delectus vel maxime quaerat.
+                Aut, laudantium animi tempora magni assumenda perferendis optio rerum, esse deserunt doloremque ratione. Earum quo optio ipsam ratione rem vero blanditiis nihil, quasi quisquam necessitatibus modi a nam officiis voluptates.
+                Ullam sint voluptatem quo minus fugiat, accusantium obcaecati est in commodi amet ea nemo laboriosam, laudantium excepturi quae aut quia sed quos possimus facilis aspernatur, esse maiores earum. Velit, molestiae.
+                Dolores sed accusamus illo tempora officiis unde deleniti id asperiores ipsam, distinctio ea doloribus modi rem temporibus enim, nostrum quasi at dolore est. Aut, fugiat rem illum amet at facilis?
+            </p>
+        </div>
+
+        <div class="clearfix">
+            <figure>
+                <img src="./images/boo-the-dog.jpg" alt="A picture of the cutest dog in the world; Boo the Dog.">
+                <cite>
+                    Source:
+                    <a href="https://people.com/pets/boo-the-pomeranian-dies/">Photo: Boo/Facebook</a>
+                </cite>
+            </figure>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, placeat deserunt illum, nihil optio cupiditate est odio voluptatem odit aliquam minima fuga iste omnis totam non delectus vel maxime quaerat.
+                Aut, laudantium animi tempora magni assumenda perferendis optio rerum, esse deserunt doloremque ratione. Earum quo optio ipsam ratione rem vero blanditiis nihil, quasi quisquam necessitatibus modi a nam officiis voluptates.
+                Ullam sint voluptatem quo minus fugiat, accusantium obcaecati est in commodi amet ea nemo laboriosam, laudantium excepturi quae aut quia sed quos possimus facilis aspernatur, esse maiores earum. Velit, molestiae.
+                Dolores sed accusamus illo tempora officiis unde deleniti id asperiores ipsam, distinctio ea doloribus modi rem temporibus enim, nostrum quasi at dolore est. Aut, fugiat rem illum amet at facilis?
+            </p>
+        </div>
+        </section>
+
+        <section class="main-section" id="section-3">
+        <h3>Section 3</h3>
+
+        <form>
+            <div class="form-group">
+                <label class="required" for="firstName">First Name</label>
+                <input type="text" name="firstName" id="firstName" required placeholder="Shaun">
+            </div>
+
+            <div class="form-group">
+                <label class="required" for="lastName">Last Name</label>
+                <input type="text" name="lastName" id="lastName" required placeholder="McKinnon">
+            </div>
+
+            <div class="form-group">
+                <label class="required" for="email">Email</label>
+                <input type="email" name="email" id="email" required placeholder="shaun.mckinnon@georgiancollege.ca">
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+        </section>
+
+        <section class="main-section" id="section-4">
+        <h3>Section 4</h3>
+
+        <ul id="skills">
+            <li><span id="html">HTML</span></li>
+            <li><span id="css">CSS</span></li>
+            <li><span id="javascript">JavaScript</span></li>
+            <li><span id="c-sharp">C#</span></li>
+        </ul>
+        </section>
+
+        <footer>
+            <p>&copy;2022 Shaun McKinnon</p>
+        </footer>
+    </body>
+</html>
